@@ -1,0 +1,12 @@
+{
+  "name": "elixir",
+  "displayName": "elixir",
+  "expo": {
+    "name": "elixir",
+    "slug": "elixir",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
