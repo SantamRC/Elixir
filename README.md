@@ -1,1 +1,1 @@
-This is a basic react native chat application.
+This is a basic react native chat application using react native. It provides features like group chats, private chats and status uploading.
