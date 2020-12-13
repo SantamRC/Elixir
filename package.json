@@ -8,7 +8,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@expo/vector-icons": "^12.0.2",
     "@react-native-community/cli": "^4.13.1",
+    "@react-native-community/masked-view": "0.1.10",
     "expo": "~39.0.2",
     "expo-location": "~9.0.0",
     "expo-screen-orientation": "~2.0.0",
@@ -22,6 +24,7 @@
     "react-native-gifted-chat": "^0.16.3",
     "react-native-map-picker": "0.0.2",
     "react-native-reanimated": "~1.13.0",
+    "react-native-safe-area-context": "3.1.4",
     "react-native-screens": "~2.10.1",
     "react-native-shake": "^3.5.0",
     "react-native-unimodules": "~0.11.0",
