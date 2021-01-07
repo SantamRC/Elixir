@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React,{useState,useEffect,useCallback} from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { GiftedChat } from 'react-native-gifted-chat'
+
+
 export default function App() {
   const [messages, setMessages] = useState([]);
 

@@ -1,25 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
-import React,{useState,useEffect,useCallback} from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+//import { createStackNavigator } from '@react-navigation/stack';
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
+import login from './src/screens/Login';
+import chat from './src/screens/Chat';
 
-import LoginScreen from './src/screens/LoginScreen';
-import ChatScreen from './src/screens/ChatScreen';
+const Tab = createMaterialBottomTabNavigator();
 
-const Stack = createStackNavigator();
-
-function App() {
+export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{
-        headerShown: false
-      }}>
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="ChatScreen" component={ChatScreen} />
-      </Stack.Navigator>
+      <Tab.Navigator>
+        <Tab.Screen name='Login' component={login} options={{ title: 'Welcome' }} />
+        <Tab.Screen name='Home' component={chat} options={{ title: 'Welcome' }} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
 
-export default App;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  }
+});
